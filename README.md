@@ -206,8 +206,7 @@ Idal dal = new MySQLDAL();
 private IPasswordGeneratorService passwordService = new GenericCheckAlgorithmService"
 ```
 
-- **This is all done through utilzing something called Java Reflection on Spring.**
-
+- **This is all done through utilizing something called Java Reflection on Spring.**
 
 #### References
 
