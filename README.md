@@ -203,7 +203,7 @@ Idal dal = new MySQLDAL();
 - @Autowiring annotation does this for us automatically like shown below:
 
 ```java
-private IPasswordGeneratorService passwordService = new GenericCheckAlgorithmService"
+private IPasswordGeneratorService passwordService = new GenericCheckAlgorithmService();
 ```
 
 - **This is all done through utilizing something called Java Reflection on Spring.**
