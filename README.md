@@ -185,6 +185,28 @@ public class Program {
 - Hard to figure out the flow in the application. As in, what is the actual implementation of the dependency you are looking at?
 - Requires configuration of dependencies.
 
+## Example of Server Locater which is one of the subtypes of IOC in Spring Boot
+
+[GenericPasswordGeneratorService.java](https://github.com/WilcyWilson/PasswordGenerator-WebApp/blob/starting_up_1/src/main/java/com/noob/coder/PasswordGenerator/service/GenericPasswordGeneratorService.java)
+
+- Here GenericPasswordGeneratorService class utilizes the @Service Annotation. We can see this GenericPasswordGeneratorService class implements IPasswordGeneratorService interface.
+
+[GenericCheckAlgorithmService.java](https://github.com/WilcyWilson/PasswordGenerator-WebApp/blob/starting_up_1/src/main/java/com/noob/coder/PasswordGenerator/service/GenericCheckAlgorithmService.java)
+
+- Now, In here we are using @Autowired annotation which searches for all the classes with @Service annotation that specifically implements GenericPasswordGeneratorService.
+- Once it finds the @Service class then its like doing which is similar to dependency injection shown above:
+
+```java
+Idal dal = new MySQLDAL();
+```
+
+- @Autowiring annotation does this for us automatically like shown below:
+
+```java
+private IPasswordGeneratorService passwordService = new GenericCheckAlgorithmService"
+```
+
+
 #### References
 
 https://www.youtube.com/watch?v=zmdWWujU8M4
