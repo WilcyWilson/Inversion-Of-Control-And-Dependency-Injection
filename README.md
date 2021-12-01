@@ -119,6 +119,8 @@ user.Add();
 }
 ```
 
+![decision](decision.png)
+
 - Here the dal object references to different implementations according to the integer value received in main class.
 - Here even if we modify our User class like this we can see we are still doing everything in our user class.
 - The decision of which data access layer Type to use is where we begin to look at inversion of control
@@ -171,9 +173,23 @@ public class Program {
 - Here now we can see that our DAL is inverted. Originally, we were creating in the user now, its been switched so that something else is going to tell the User what DAL its going to use, this is inversion of control.
 - The User class no longer creates the data access layer instead it relies on something else to tell it what data access layer to use.
 
+## Features of IOC?
+
+- Components can be easily tested independently.
+- Program complexity can be reduced.
+- You can switch components to another implementation.
+
+## Drawbacks of IOC?
+
+- Another framework in your toolbox (another mindset to adapt)
+- Hard to figure out the flow in the application. As in, what is the actual implementation of the dependency you are looking at?
+- Requires configuration of dependencies.
+
 #### References
 
 https://www.youtube.com/watch?v=zmdWWujU8M4
+https://softwareengineering.stackexchange.com/questions/131446/what-is-inversion-of-control-and-when-should-i-use-it
+https://peterdaugaardrasmussen.com/2017/07/30/advantages-of-ioc-containers-and-why-we-use-them/
 
 
 
