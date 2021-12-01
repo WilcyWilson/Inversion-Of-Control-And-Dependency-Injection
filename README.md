@@ -185,7 +185,7 @@ public class Program {
 - Hard to figure out the flow in the application. As in, what is the actual implementation of the dependency you are looking at?
 - Requires configuration of dependencies.
 
-## Example of Server Locater which is one of the subtypes of IOC in Spring Boot
+## Example of Service Locater which is one of the subtypes of IOC in Spring Boot
 
 [GenericPasswordGeneratorService.java](https://github.com/WilcyWilson/PasswordGenerator-WebApp/blob/starting_up_1/src/main/java/com/noob/coder/PasswordGenerator/service/GenericPasswordGeneratorService.java)
 
@@ -205,6 +205,8 @@ Idal dal = new MySQLDAL();
 ```java
 private IPasswordGeneratorService passwordService = new GenericCheckAlgorithmService"
 ```
+
+- **This is all done through utilzing something called Java Reflection on Spring.**
 
 
 #### References
