@@ -126,7 +126,7 @@ user.Add();
 - The decision of which data access layer Type to use is where we begin to look at inversion of control
 - Our User class is tightly coupled to our data access layer
 - The User class is defining for itself, what type of DAL to use
-- ** Most of the time programmers don't get to choose the DAL, they are handed one.**
+- **Most of the time programmers don't get to choose the DAL, they are handed one.**
 We are going to modify the constructor to achieve IOC through Dependency Injection.
 
 ### After Utilizing Dependency Injection
