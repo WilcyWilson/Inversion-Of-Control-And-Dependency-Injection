@@ -210,9 +210,9 @@ private IPasswordGeneratorService passwordService = new GenericCheckAlgorithmSer
 
 #### References
 
-https://www.youtube.com/watch?v=zmdWWujU8M4
-https://softwareengineering.stackexchange.com/questions/131446/what-is-inversion-of-control-and-when-should-i-use-it
-https://peterdaugaardrasmussen.com/2017/07/30/advantages-of-ioc-containers-and-why-we-use-them/
+- https://www.youtube.com/watch?v=zmdWWujU8M4
+- https://softwareengineering.stackexchange.com/questions/131446/what-is-inversion-of-control-and-when-should-i-use-it
+- https://peterdaugaardrasmussen.com/2017/07/30/advantages-of-ioc-containers-and-why-we-use-them/
 
 
 
